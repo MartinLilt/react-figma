@@ -1,5 +1,4 @@
 import s from "./hero.module.css";
-// import LayOut from "../layOut";
 
 const Hero = () => {
   return (

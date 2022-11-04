@@ -9,7 +9,7 @@ const Info = () => {
           className={s.box}
           style={{ background: "var(--accent-background-color)" }}
         >
-          <span>
+          <span className={s.supptitle}>
             <p className={s.list_text}>
               VICE MEDIA @ ART <br /> BASEL, MIAMI BEACH
             </p>

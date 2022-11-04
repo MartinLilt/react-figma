@@ -12,9 +12,11 @@ img {
 
 .box {
   width: 50%;
-  height: 187px;
+  float: left;
+  padding-top: 50%;
   display: block;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .box:nth-child(7),
@@ -34,6 +36,9 @@ img {
   font-family: "FFCall-800-negative-lot";
   width: 128px;
   line-height: 17px;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 55%);
 }
 
 .box:nth-child(1) {

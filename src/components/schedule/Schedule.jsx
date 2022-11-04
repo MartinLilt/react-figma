@@ -146,7 +146,7 @@ const Schedule = () => {
       </div>
       <div className={s.list_box}>
         <span className={s.box}>
-          <span>
+          <span className={s.supptitle}>
             <p className={s.text}>
               THE CARL FISHER <br /> CLUBHOUSE
             </p>
@@ -196,7 +196,7 @@ const Schedule = () => {
           className={s.box}
           style={{ background: "var(--accent-background-color)" }}
         >
-          <span>
+          <span className={s.supptitle}>
             <p className={s.list_text}>
               VICE MEDIA @ ART <br /> BASEL, MIAMI BEACH
             </p>

@@ -10,10 +10,15 @@ img {
   line-height: 25px;
   color: var(--accent-text-color);
   text-transform: none;
-  width: 300px;
   display: block;
 
   margin: 0 0 70px 0;
+}
+
+@media screen and (min-width: 375px) {
+  .text {
+    width: 300px;
+  }
 }
 
 .title {
@@ -50,7 +55,8 @@ img {
 
 .box_text {
   width: 50%;
-  height: 187px;
+  float: left;
+  padding-top: 50%;
   display: block;
   background-repeat: no-repeat;
 }
@@ -60,6 +66,7 @@ img {
   justify-content: center;
   display: flex;
   background-color: var(--main-background-color);
+  position: relative;
 }
 
 .box_text:nth-child(1)::after {
@@ -68,6 +75,9 @@ img {
   font-family: "FFCall-800-negative-lot";
   width: 128px;
   line-height: 17px;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 55%);
 }
 
 .list_text {
@@ -76,10 +86,15 @@ img {
   line-height: 14px;
   color: var(--main-text-color);
   text-transform: none;
-  width: 300px;
 
   padding: 0 25px;
   margin: 0 auto 100px 0;
+}
+
+@media screen and (min-width: 375px) {
+  .list_text {
+    width: 300px;
+  }
 }
 
 .list_text span:not(:last-child) {
@@ -89,7 +104,8 @@ img {
 
 .box {
   width: 50%;
-  height: 187px;
+  float: left;
+  padding-top: 50%;
   display: block;
   background-repeat: no-repeat;
 }
@@ -124,6 +140,7 @@ img {
   justify-content: center;
   display: flex;
   background-color: var(--main-background-color);
+  position: relative;
 }
 
 .box:nth-child(8)::after {
@@ -132,4 +149,7 @@ img {
   font-family: "FFCall-800-negative-lot";
   width: 128px;
   line-height: 17px;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 55%);
 }
