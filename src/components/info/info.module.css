@@ -1,0 +1,29 @@
+.list_box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  height: 187px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.box:nth-child(2) {
+  background-color: var(--main-background-color);
+}
+
+.box:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list_text {
+  font-family: "FFCall-800-negative-lot";
+  line-height: 17px;
+  color: var(--main-text-color);
+}

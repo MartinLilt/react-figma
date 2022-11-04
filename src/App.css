@@ -1,0 +1,42 @@
+:root {
+  --main-text-color: #ffffff;
+  --accent-text-color: #010101;
+
+  --main-background-color: #ffffff;
+  --accent-background-color: #000000;
+  --light-fri-background-color: #00ff00;
+  --light-thur-background-color: #252cff;
+  --light-wed-background-color: #fff000;
+
+  --font-family-grotesk-bold: "Grotesk-700";
+  --font-family-grotesk-extrabold: "Grotesk-800";
+  --font-family-ffcall-thin: "FFCall-100-lot";
+  --font-family-ffcall-thin-negative: "FFCall-100-negative-lot";
+}
+
+.html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  background-color: var(--accent-background-color);
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  line-height: 16px;
+  font-style: normal;
+  text-transform: uppercase;
+  position: relative;
+}

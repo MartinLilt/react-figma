@@ -1,0 +1,162 @@
+.box_title {
+  padding: 0 25px;
+  margin: 0 auto 50px auto;
+}
+
+.icon {
+  margin: 0 0 38px 0;
+}
+
+.title {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 50px;
+  line-height: 44px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: var(--accent-text-color);
+}
+
+.list_box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  height: 187px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.box:nth-child(2) {
+  background-color: var(--light-fri-background-color);
+}
+
+.box:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: var(--font-family-ffcall-thin);
+  color: var(--accent-text-color);
+  text-align: left;
+}
+
+.text:nth-child(1) {
+  margin: 0 0 25px 0;
+}
+
+.text:nth-child(2) {
+  margin: 0 0 10px 0;
+}
+
+.container {
+  background-color: var(--light-fri-background-color);
+
+  padding: 0 25px 100px 25px;
+  margin: 0 auto;
+}
+
+.flex_day {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day {
+  font-family: var(--font-family-ffcall-thin);
+  text-align: center;
+  color: var(--accent-text-color);
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 50%;
+  outline: none;
+
+  padding: 70px 0;
+}
+
+.day:focus-visible {
+  border: 0;
+}
+
+.day > strong {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 15px;
+  line-height: 18px;
+
+  margin: 0 0 16px 0;
+}
+
+.day:focus {
+  opacity: 100%;
+}
+
+.day:focus::after {
+  content: "";
+  display: block;
+  background: url(../../icons/pluse.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.time {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--accent-text-color);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 15px 0;
+}
+
+.time span:nth-child(2) {
+  font-family: var(--font-family-ffcall-thin);
+  font-size: 11px;
+}
+
+.name {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--accent-text-color);
+
+  margin: 0 0 15px 0;
+}
+
+.description {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--accent-text-color);
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 15px 0;
+}
+
+.description_event {
+  font-family: "FFCall-800-negative-lot";
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--accent-text-color);
+}
+
+.sentence:not(:last-child) {
+  margin: 0 0 55px 0;
+}
+
+.list_text {
+  font-family: "FFCall-800-negative-lot";
+  line-height: 17px;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,135 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--accent-text-color);
+  text-transform: none;
+  width: 300px;
+  display: block;
+
+  margin: 0 0 70px 0;
+}
+
+.title {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 50px;
+  line-height: 44px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: var(--accent-text-color);
+
+  margin: 0 0 44px 0;
+}
+
+.icon {
+  margin: 0 0 30px 0;
+}
+
+.description {
+  font-family: var(--font-family-ffcall-thin);
+  color: var(--accent-text-color);
+}
+
+.description_text:not(:last-child) {
+  margin: 0 0 28px 0;
+}
+
+.list_box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  margin: 0 0 85px 0;
+}
+
+.box_text {
+  width: 50%;
+  height: 187px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.box_text:nth-child(1) {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--main-background-color);
+}
+
+.box_text:nth-child(1)::after {
+  content: "VICE  @ ART BASEL, MIAMI BEACH";
+  color: var(--accent-text-color);
+  font-family: "FFCall-800-negative-lot";
+  width: 128px;
+  line-height: 17px;
+}
+
+.list_text {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--main-text-color);
+  text-transform: none;
+  width: 300px;
+
+  padding: 0 25px;
+  margin: 0 auto 100px 0;
+}
+
+.list_text span:not(:last-child) {
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.box {
+  width: 50%;
+  height: 187px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.box:nth-child(1) {
+  background-image: url(../../images/fourthImage/fImage.jpg);
+  background-size: 100%;
+}
+
+.box:nth-child(3) {
+  background-image: url(../../images/fithImage/fiImage-1.jpg);
+  background-size: 100%;
+}
+
+.box:nth-child(4) {
+  background-image: url(../../images/fithImage/fiImage-2.jpg);
+  background-size: 100%;
+}
+
+.box:nth-child(5) {
+  background-image: url(../../images/fithImage/fiImage-3.jpg);
+  background-size: 100%;
+}
+
+.box:nth-child(6) {
+  background-image: url(../../images/fithImage/fiImage-4.jpg);
+  background-size: 100%;
+}
+
+.box:nth-child(8) {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--main-background-color);
+}
+
+.box:nth-child(8)::after {
+  content: "VICE  @ ART BASEL, MIAMI BEACH";
+  color: var(--accent-text-color);
+  font-family: "FFCall-800-negative-lot";
+  width: 128px;
+  line-height: 17px;
+}

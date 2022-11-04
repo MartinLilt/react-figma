@@ -1,0 +1,336 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.box_title {
+  padding: 0 25px;
+
+  margin: 0 auto 80px auto;
+}
+
+.icon {
+  margin: 0 0 38px 0;
+}
+
+.title {
+  font-family: var(--font-family-grotesk-bold);
+  font-size: 50px;
+  line-height: 44px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: var(--main-text-color);
+}
+
+.list_box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  height: 187px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.box:nth-child(1) {
+  background-image: url(../../images/talent/mobile/talent-1.jpg);
+}
+
+.box:nth-child(1) {
+  background-image: url(../../images/talent/mobile/talent-1.jpg);
+}
+
+.box:nth-child(4) {
+  background-image: url(../../images/talent/mobile/talent-2.jpg);
+}
+
+.box:nth-child(5) {
+  background-image: url(../../images/talent/mobile/talent-3.jpg);
+}
+
+.box:nth-child(8) {
+  background-image: url(../../images/talent/mobile/talent-4.jpg);
+}
+
+.box:nth-child(9) {
+  background-image: url(../../images/talent/mobile/talent-5.jpg);
+}
+
+.box:nth-child(12) {
+  background-image: url(../../images/talent/mobile/talent-6.jpg);
+}
+
+.box:nth-child(13) {
+  background-image: url(../../images/talent/mobile/talent-1.jpg);
+}
+
+.box:nth-child(16) {
+  background-image: url(../../images/talent/mobile/talent-2.jpg);
+}
+
+.box:nth-child(17) {
+  background-image: url(../../images/talent/mobile/talent-3.jpg);
+}
+
+.box:nth-child(20) {
+  background-image: url(../../images/talent/mobile/talent-4.jpg);
+}
+
+.box:nth-child(21) {
+  background: var(--main-background-color);
+}
+
+.box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(2)::after {
+  content: "TIMEBOY Artist, Composer & VJ";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 110px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(2)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(3)::after {
+  content: "Kimberly Drew Writer, Curator & Activist";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 120px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(3)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(6)::after {
+  content: "THEY HATE CHANGE musicians";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 150px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(6)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(7)::after {
+  content: "Doechiii, Musician";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 110px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(7)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(10) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(10)::after {
+  content: "GHETtO GASTRO Culinary Collective ";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 150px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(10)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(11) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(11)::after {
+  content: "454 & PIG THE GEMINI musicians";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 110px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(11)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(14) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(14)::after {
+  content: "TIMEBOY Artist, Composer & VJ";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 110px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(14)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(15) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(15)::after {
+  content: "Kimberly Drew Writer, Curator & Activist";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 120px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(15)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(18) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(18)::after {
+  content: "THEY HATE CHANGE musicians";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 120px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(18)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}
+
+.box:nth-child(19) {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:nth-child(19)::after {
+  content: "Doechiii, Musician";
+  color: var(--main-text-color);
+  font-family: var(--font-family-ffcall-thin);
+  width: 110px;
+  line-height: 17px;
+
+  margin: auto 0 30px 20px;
+}
+
+.box:nth-child(19)::before {
+  content: "";
+  background: url(../../icons/pluseWhite.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+
+  margin: 40px 0 0 20px;
+}

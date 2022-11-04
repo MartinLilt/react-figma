@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "Grotesk-100";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-15UltTh.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-100-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-16UltThIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-200";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-25Th.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-200-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-26ThIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-300";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-35XLt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-300-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-36XLtIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-400";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-45Lt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-400-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-46LtIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-500";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-55Rg.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-500-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-56It.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-600";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-65Md.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-600-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-66MdIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-700";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-75Bd.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-700-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-76BdIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-800";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-95Blk.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk-800-italic";
+  src: local("Grotesk"),
+    url("./fonts/Grotesk/NHaasGroteskDSStd-96BlkIt.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-100-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallOneNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-100-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallOneOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-100-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallOneOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-200-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallTwoNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-200-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallTwoOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-200-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallTwoOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-300-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallThreeNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-300-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallThreeOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-300-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallThreeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-400-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFourLNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-400-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFourLOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-400-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallFourLOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFiveLNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFiveLOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallFiveLOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-negative-sot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFiveSNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-italic-sot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallFiveSOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-500-sot";
+  src: local("FFCall"), url("./fonts/FFCall/CallFiveSOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-600-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallSixNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-600-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallSixOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-600-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallSixOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-700-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallSevenNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-700-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallSevenOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-700-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallSevenOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-800-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallEightNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-800-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallEightOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-800-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallEightOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-negative-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallNineLNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-italic-lot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallNineLOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-lot";
+  src: local("FFCall"), url("./fonts/FFCall/CallNineLOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-negative-sot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallNineSNegativeOT.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-italic-sot";
+  src: local("FFCall"),
+    url("./fonts/FFCall/CallNineSOT-Italic.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "FFCall-900-sot";
+  src: local("FFCall"), url("./fonts/FFCall/CallNineSOT.otf") format("truetype");
+}
