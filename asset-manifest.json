@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.edc633e8.css",
-    "main.js": "/react-gh-pages/static/js/main.ce24903b.js",
+    "main.css": "/react-gh-pages/static/css/main.2054a764.css",
+    "main.js": "/react-gh-pages/static/js/main.371979ca.js",
     "static/js/787.f1282dee.chunk.js": "/react-gh-pages/static/js/787.f1282dee.chunk.js",
     "static/media/CallFourLNegativeOT.otf": "/react-gh-pages/static/media/CallFourLNegativeOT.98c061bb514123d0506c.otf",
     "static/media/CallNineLNegativeOT.otf": "/react-gh-pages/static/media/CallNineLNegativeOT.719b27ce00aad535a48b.otf",
@@ -67,24 +67,24 @@
     "static/media/talent-1.jpg": "/react-gh-pages/static/media/talent-1.ce0f7da0e48d97311245.jpg",
     "static/media/fiImage-1.jpg": "/react-gh-pages/static/media/fiImage-1.fc7ce7c3f33ba1f086f1.jpg",
     "static/media/fiImage-4.jpg": "/react-gh-pages/static/media/fiImage-4.be136333b4c110407c3b.jpg",
-    "static/media/tickets.svg": "/react-gh-pages/static/media/tickets.b6d628e06b026913e8296411b4003482.svg",
-    "static/media/group.svg": "/react-gh-pages/static/media/group.53d8e0790bb2e94e19d8d64a955f76ee.svg",
+    "static/media/tickets.svg": "/react-gh-pages/static/media/tickets.6451f52e8adf2d39b119f5834fdb2b34.svg",
+    "static/media/group.svg": "/react-gh-pages/static/media/group.f63adbd223611d74a5fb8ebf70422011.svg",
     "static/media/CallNineSOT.otf": "/react-gh-pages/static/media/CallNineSOT.678594f6c64baf9ba08d.otf",
     "static/media/talent-2.jpg": "/react-gh-pages/static/media/talent-2.b67f6675c5d966792bd9.jpg",
     "static/media/faqImage.png": "/react-gh-pages/static/media/faqImage.f678dbc21f08708a75fc.png",
-    "static/media/text.svg": "/react-gh-pages/static/media/text.2392c3b263b2ebdc88b9c71e4606620b.svg",
-    "static/media/vice.svg": "/react-gh-pages/static/media/vice.8f26ba3e96b2b1d14553a47392d6030a.svg",
-    "static/media/title.svg": "/react-gh-pages/static/media/title.338420aa20666b183da4a3e4e50c54bc.svg",
+    "static/media/text.svg": "/react-gh-pages/static/media/text.b64c6292ea2238adc618b849daa5e6eb.svg",
+    "static/media/vice.svg": "/react-gh-pages/static/media/vice.d2491fc9627183dbb56e49b2b77c76d3.svg",
+    "static/media/title.svg": "/react-gh-pages/static/media/title.0defa56529b3c7cd1cdc8404b86cad6b.svg",
     "index.html": "/react-gh-pages/index.html",
-    "static/media/pluse.svg": "/react-gh-pages/static/media/pluse.3c9618b517a10d0bacac466ca618e6a8.svg",
-    "static/media/pluseWhite.svg": "/react-gh-pages/static/media/pluseWhite.7650a30e3b0c4fd465e56e80edc2f071.svg",
-    "static/media/minus.svg": "/react-gh-pages/static/media/minus.9764d6e96bc2f9711c8cd06bdef0726d.svg",
-    "main.edc633e8.css.map": "/react-gh-pages/static/css/main.edc633e8.css.map",
-    "main.ce24903b.js.map": "/react-gh-pages/static/js/main.ce24903b.js.map",
+    "static/media/pluse.svg": "/react-gh-pages/static/media/pluse.6e5b61e65a2ff599c5444fcec75c80b5.svg",
+    "static/media/pluseWhite.svg": "/react-gh-pages/static/media/pluseWhite.23c340d5caa44e0366d718bc8981fbb2.svg",
+    "static/media/minus.svg": "/react-gh-pages/static/media/minus.4d76e384ddf82e179987b47df6dfaf2f.svg",
+    "main.2054a764.css.map": "/react-gh-pages/static/css/main.2054a764.css.map",
+    "main.371979ca.js.map": "/react-gh-pages/static/js/main.371979ca.js.map",
     "787.f1282dee.chunk.js.map": "/react-gh-pages/static/js/787.f1282dee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edc633e8.css",
-    "static/js/main.ce24903b.js"
+    "static/css/main.2054a764.css",
+    "static/js/main.371979ca.js"
   ]
 }
