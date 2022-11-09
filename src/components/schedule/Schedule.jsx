@@ -190,7 +190,7 @@ const Schedule = () => {
 
   useLayoutEffect(() => {
     if (target) {
-      target.current.focus();
+      target.current.focus({ preventScroll: true });
     }
   }, []);
 
