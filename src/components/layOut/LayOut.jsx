@@ -10,6 +10,7 @@ const LayOut = ({
 }) => {
   const Tag = tag || "section";
   const getSectionStyle = isSection || "undefaund";
+
   return (
     <Tag className={getSectionStyle} style={{ background: backgroundColor }}>
       <Container styles={styles}>{children}</Container>

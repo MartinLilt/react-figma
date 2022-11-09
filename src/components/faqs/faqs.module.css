@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -15,6 +22,15 @@ img {
   margin: 0 0 38px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+
+    margin: 0 30px 0 0;
+  }
+}
+
 .title {
   font-family: var(--font-family-grotesk-bold);
   font-size: 24px;
@@ -24,6 +40,21 @@ img {
   color: var(--accent-text-color);
 
   margin: 0 0 80px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 46px;
+    line-height: 44px;
+    width: 300px;
+    margin: 0 0 300px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box_title {
+    display: flex;
+  }
 }
 
 .text {
@@ -40,6 +71,24 @@ img {
   margin: 0 0 20px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 450px;
+  }
+
+  .text > p:first-child {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    display: flex;
+  }
+}
+
 .question {
   font-family: "FFCall-800-negative-lot";
 }
@@ -50,12 +99,43 @@ img {
   margin: 0 0 10px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .question {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    line-height: 31px;
+  }
+}
+
 .image {
   margin: 0 0 50px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 860px;
+    mix-blend-mode: darken;
+    transform: translate(-5%, -30%);
+    margin: 0;
+  }
+}
+
+.list_button {
+  cursor: pointer;
+}
+
 .list_button:not(:last-child) {
-  margin: 0 0 40px 0;
+  padding: 0 0 40px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .list_button:not(:last-child) {
+    padding: 0 0 50px 0;
+  }
 }
 
 .button {
@@ -68,6 +148,13 @@ img {
   width: 85%;
 }
 
+@media screen and (min-width: 1200px) {
+  .button {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
 .text_button {
   font-family: var(--font-family-ffcall-thin);
   font-size: 12px;
@@ -75,6 +162,14 @@ img {
   color: var(--accent-text-color);
 
   margin: 18px 0 0 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .text_button {
+    font-size: 15px;
+    line-height: 30px;
+    width: 770px;
+  }
 }
 
 .title_button {
@@ -85,4 +180,24 @@ img {
 .icon_button {
   width: 14px;
   height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon_button {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .position {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .absolute {
+    position: absolute;
+    top: -11%;
+  }
 }

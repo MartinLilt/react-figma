@@ -10,8 +10,23 @@ img {
   margin: 0 auto 80px auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .box_title {
+    padding: 0 50px;
+  }
+}
+
 .icon {
   margin: 0 0 38px 0;
+  width: 14px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .title {
@@ -21,6 +36,39 @@ img {
   text-align: justify;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 228px;
+    line-height: 187px;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+}
+
+.supp_title {
+  color: var(--main-text-color);
+  font-family: "FFCall-800-negative-lot";
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  display: flex;
+
+  margin: 0 0 100px 0;
+}
+
+.supp_title p {
+  width: 180px;
+}
+
+.supp_title p:not(:last-child) {
+  margin: 0 40px 0 0;
+}
+
+.supp_title p:last-child {
+  font-family: var(--font-family-ffcall-thin);
+  width: 230px;
 }
 
 .list_box {
@@ -35,55 +83,347 @@ img {
   padding-top: 50%;
   display: block;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100.5%;
+  background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 20%;
+    padding-top: 20%;
+  }
 }
 
 .box:nth-child(1) {
-  background-image: url(../../images/talent/mobile/talent-1.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-1.jpg);
 }
 
-.box:nth-child(1) {
-  background-image: url(../../images/talent/mobile/talent-1.jpg);
+@media screen and (min-width: 1200px) {
+  .box:nth-child(1) {
+    background-image: url(../../assets/images/talent/desktop/image-1.jpg);
+  }
 }
 
 .box:nth-child(4) {
-  background-image: url(../../images/talent/mobile/talent-2.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-2.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(4) {
+    background-image: url(../../assets/images/talent/desktop/image-6.jpg);
+  }
 }
 
 .box:nth-child(5) {
-  background-image: url(../../images/talent/mobile/talent-3.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-3.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(5) {
+    background-image: url(../../assets/images/talent/desktop/image-7.jpg);
+  }
 }
 
 .box:nth-child(8) {
-  background-image: url(../../images/talent/mobile/talent-4.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-4.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(8) {
+    background-image: none;
+  }
+
+  .box:nth-child(8) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(8)::after {
+    content: "Kimberly Drew \A Writer, Curator & Activist";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    line-height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(8)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0%;
+    margin: 0 0 40px 20px;
+  }
 }
 
 .box:nth-child(9) {
-  background-image: url(../../images/talent/mobile/talent-5.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-5.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(9) {
+    background-image: url(../../assets/images/talent/desktop/image-9.jpg);
+  }
 }
 
 .box:nth-child(12) {
-  background-image: url(../../images/talent/mobile/talent-6.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-6.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(12) {
+    background-image: url(../../assets/images/talent/desktop/image-11.jpg);
+  }
 }
 
 .box:nth-child(13) {
-  background-image: url(../../images/talent/mobile/talent-1.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-1.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(13) {
+    background-image: url(../../assets/images/talent/desktop/image-12.jpg);
+  }
 }
 
 .box:nth-child(16) {
-  background-image: url(../../images/talent/mobile/talent-2.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-2.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(16) {
+    background-image: none;
+  }
+
+  .box:nth-child(16) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(16)::after {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0%;
+    margin: 0 0 40px 20px;
+  }
+
+  .box:nth-child(16)::before {
+    content: "Doechiii, \A Musician";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    font-size: 15px;
+    line-height: 30px;
+    top: 0%;
+    width: auto;
+    position: absolute;
+    transform: translate(0, 0%);
+    background-position: center;
+    margin: 40px 0 0 20px;
+  }
 }
 
 .box:nth-child(17) {
-  background-image: url(../../images/talent/mobile/talent-3.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-3.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(17) {
+    background-image: url(../../assets/images/talent/desktop/image-13.jpg);
+  }
 }
 
 .box:nth-child(20) {
-  background-image: url(../../images/talent/mobile/talent-4.jpg);
+  background-image: url(../../assets/images/talent/mobile/talent-4.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(20) {
+    background-image: none;
+  }
+
+  .box:nth-child(20) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(20)::after {
+    content: "454 & PIG THE GEMINI \A musicians";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(20)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0%;
+
+    margin: 40px 0 0 20px;
+  }
 }
 
 .box:nth-child(21) {
   background: var(--main-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(21) {
+    background: none;
+  }
+  .box:nth-child(21) {
+    background-image: url(../../assets/images/talent/desktop/image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(22) {
+    background-image: url(../../assets/images/talent/desktop/image-2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(23) {
+    background-image: url(../../assets/images/talent/desktop/image-5.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(24) {
+    background-image: url(../../assets/images/talent/desktop/image-6.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(25) {
+    background-image: url(../../assets/images/talent/desktop/image-7.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(27) {
+    background-image: url(../../assets/images/talent/desktop/image-3.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(29) {
+    background-image: url(../../assets/images/talent/desktop/image-9.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(31) {
+    background-image: url(../../assets/images/talent/desktop/image-10.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(32) {
+    background-image: url(../../assets/images/talent/desktop/image-11.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(33) {
+    background-image: url(../../assets/images/talent/desktop/image-12.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(34) {
+    background-image: url(../../assets/images/talent/desktop/image-15.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(35) {
+    background-image: url(../../assets/images/talent/desktop/image-16.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(37) {
+    background-image: url(../../assets/images/talent/desktop/image-13.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(39) {
+    background-image: url(../../assets/images/talent/desktop/image-17.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(41) {
+    background-image: url(../../assets/images/talent/desktop/image-1.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(42) {
+    background-image: url(../../assets/images/talent/desktop/image-2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(43) {
+    background-image: url(../../assets/images/talent/desktop/image-5.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(44) {
+    background-image: url(../../assets/images/talent/desktop/image-6.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(45) {
+    background-image: url(../../assets/images/talent/desktop/image-7.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(47) {
+    background-image: url(../../assets/images/talent/desktop/image-3.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(49) {
+    background-image: url(../../assets/images/talent/desktop/image-9.jpg);
+  }
 }
 
 .box:nth-child(2) {
@@ -107,7 +447,7 @@ img {
 
 .box:nth-child(2)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -115,6 +455,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(2) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(2)::after {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(2)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(2) {
+    background-image: url(../../assets/images/talent/desktop/image-2.jpg);
+  }
 }
 
 .box:nth-child(3) {
@@ -138,7 +500,7 @@ img {
 
 .box:nth-child(3)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -146,6 +508,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(3) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(3)::after {
+    content: "Kimberly Drew Writer, Curator & Activist";
+    display: none;
+  }
+
+  .box:nth-child(3)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(3) {
+    background-image: url(../../assets/images/talent/desktop/image-5.jpg);
+  }
 }
 
 .box:nth-child(6) {
@@ -158,7 +542,7 @@ img {
   content: "THEY HATE CHANGE musicians";
   color: var(--main-text-color);
   font-family: var(--font-family-ffcall-thin);
-  width: 150px;
+  width: auto;
   line-height: 17px;
   position: absolute;
   top: 47%;
@@ -169,7 +553,7 @@ img {
 
 .box:nth-child(6)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -177,6 +561,25 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(6)::after {
+    content: "TIMEBOY \A Artist, Composer & VJ";
+    white-space: pre-wrap;
+    font-size: 15px;
+    line-height: 30px;
+    top: unset;
+    bottom: 0;
+    margin: 0 0 30px 20px;
+    transform: translate(0, 0);
+  }
+
+  .box:nth-child(6)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .box:nth-child(7) {
@@ -200,7 +603,7 @@ img {
 
 .box:nth-child(7)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -208,6 +611,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(7) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(7)::after {
+    content: "Doechiii, Musician";
+    display: none;
+  }
+
+  .box:nth-child(7)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(7) {
+    background-image: url(../../assets/images/talent/desktop/image-3.jpg);
+  }
 }
 
 .box:nth-child(10) {
@@ -220,7 +645,7 @@ img {
   content: "GHETtO GASTRO Culinary Collective ";
   color: var(--main-text-color);
   font-family: var(--font-family-ffcall-thin);
-  width: 150px;
+  width: auto;
   line-height: 17px;
   position: absolute;
   top: 47%;
@@ -231,7 +656,7 @@ img {
 
 .box:nth-child(10)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -239,6 +664,25 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(10)::after {
+    content: "THEY HATE CHANGE \A musicians";
+    white-space: pre-wrap;
+    font-size: 15px;
+    line-height: 30px;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(10)::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .box:nth-child(11) {
@@ -262,7 +706,7 @@ img {
 
 .box:nth-child(11)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -270,6 +714,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(11) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(11)::after {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(11)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(11) {
+    background-image: url(../../assets/images/talent/desktop/image-10.jpg);
+  }
 }
 
 .box:nth-child(14) {
@@ -293,7 +759,7 @@ img {
 
 .box:nth-child(14)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -301,6 +767,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(14) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(14)::after {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(14)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(14) {
+    background-image: url(../../assets/images/talent/desktop/image-15.jpg);
+  }
 }
 
 .box:nth-child(15) {
@@ -324,7 +812,7 @@ img {
 
 .box:nth-child(15)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -332,6 +820,28 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(15) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(15)::after {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(15)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(15) {
+    background-image: url(../../assets/images/talent/desktop/image-16.jpg);
+  }
 }
 
 .box:nth-child(18) {
@@ -344,7 +854,7 @@ img {
   content: "THEY HATE CHANGE musicians";
   color: var(--main-text-color);
   font-family: var(--font-family-ffcall-thin);
-  width: 120px;
+  width: auto;
   line-height: 17px;
   position: absolute;
   top: 47%;
@@ -355,7 +865,7 @@ img {
 
 .box:nth-child(18)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -363,6 +873,34 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(18)::after {
+    content: "GHETtO GASTRO \A Culinary Collective";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(18)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    background-position: center;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    margin: 0 0 40px 20px;
+  }
 }
 
 .box:nth-child(19) {
@@ -386,7 +924,7 @@ img {
 
 .box:nth-child(19)::before {
   content: "";
-  background: url(../../icons/pluseWhite.svg);
+  background: url(../../assets/icons/plusWhite.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -394,4 +932,362 @@ img {
   top: 0%;
 
   margin: 40px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(19) {
+    display: block;
+    flex-direction: unset;
+    position: unset;
+  }
+
+  .box:nth-child(19)::after {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(19)::before {
+    content: "";
+    display: none;
+  }
+
+  .box:nth-child(19) {
+    background-image: url(../../assets/images/talent/desktop/image-17.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(26) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(26)::after {
+    content: "Sudan The Archives \A Artist";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(26)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    margin: 40px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(28) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(28)::after {
+    content: "Suzi Analogue \A Producer and Composer";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(28)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    margin: 0 0 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(30) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(30)::after {
+    content: "Shannon Stokes \A Creative Director & \A Stylist";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(30)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    margin: 40px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(36) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(36)::after {
+    content: "Doechiii, \A Musician";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(36)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    margin: 0 0 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(38) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(38)::after {
+    content: "GHETtO GASTRO \A Culinary Collective ";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(38)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    margin: 0 0 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(40) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(40)::after {
+    content: "454 & PIG THE GEMINI \A musicians";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(40)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    margin: 40px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(46) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(46)::after {
+    content: "Sudan The Archives \A Artist";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(46)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    margin: 40px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(48) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(48)::after {
+    content: "Suzi Analogue \A Producer and Composer";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0%);
+    margin: 40px 0 0 20px;
+  }
+
+  .box:nth-child(48)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    margin: 0 0 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(50) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .box:nth-child(50)::after {
+    content: "Shannon Stokes \A Creative Director & \A Stylist";
+    white-space: pre-wrap;
+    color: var(--main-text-color);
+    font-family: var(--font-family-ffcall-thin);
+    width: auto;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0%);
+    margin: 0 0 30px 20px;
+  }
+
+  .box:nth-child(50)::before {
+    content: "";
+    background: url(../../assets/icons/plusWhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    margin: 40px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(51) {
+    background-color: var(--main-background-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(52) {
+    background-color: var(--main-background-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:nth-child(53) {
+    background-color: var(--main-background-color);
+  }
+}
+
+.box {
+  background-size: 100.5%;
 }

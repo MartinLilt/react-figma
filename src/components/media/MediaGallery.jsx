@@ -1,14 +1,37 @@
 import s from "./media.module.css";
 import LayOut from "../layOut";
+import { useLayoutEffect, useRef, useState, useContext } from "react";
+import useResizeObserver from "@react-hook/resize-observer";
+import { deviceWidth } from "../../vars/deviceWidth";
+import { PageFormatContext } from "../../context/pageFormatContext";
 
 const MediaGallery = () => {
+  const target = useRef(null);
+  const pageFormat = useContext(PageFormatContext);
+  let [size, setSize] = useState({ width: 0, height: 0 });
+  const isMobile = pageFormat < deviceWidth.desktopW ? true : false;
+
+  useLayoutEffect(() => {
+    target.current && setRoundedSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  const setRoundedSize = ({ width, height }) => {
+    setSize({ width: Math.round(width), height: Math.round(height) });
+  };
+
+  useResizeObserver(target, (entry) => {
+    const { inlineSize: width, blockSize: height } = entry.contentBoxSize[0];
+    setRoundedSize({ width, height });
+  });
+
   return (
     <LayOut>
       <div className={s.list_box}>
-        {new Array(2).fill(0).map((_, id) => (
+        {new Array(isMobile ? 2 : 10).fill(0).map((_, id) => (
           <span key={id} className={s.box_text}></span>
         ))}
       </div>
+
       <p className={s.list_text}>
         <span>
           VICE is taking over the historic Carl Fisher Clubhouse (centrally
@@ -31,10 +54,15 @@ const MediaGallery = () => {
           it results in innovation in the genre, culture and beyond.
         </span>
       </p>
-      <div className={s.list_box} style={{ margin: "0" }}>
-        {new Array(8).fill(0).map((_, id) => (
-          <span key={id} className={s.box}></span>
-        ))}
+      <div
+        className={s.position}
+        style={{ height: isMobile ? null : size.height - 240 }}
+      >
+        <div className={s.list_box_end} style={{ margin: "0" }} ref={target}>
+          {new Array(isMobile ? 8 : 20).fill(0).map((_, id) => (
+            <span key={id} className={s.box}></span>
+          ))}
+        </div>
       </div>
     </LayOut>
   );

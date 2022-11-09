@@ -1,4 +1,5 @@
 export const deviceWidth = {
   mobileW: 375,
-  desktopW: 1600,
+  tab: 768,
+  desktopW: 1200,
 };

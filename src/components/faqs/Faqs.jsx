@@ -1,9 +1,12 @@
 import s from "./faqs.module.css";
 import LayOut from "../layOut";
-import { ReactComponent as IconPluse } from "../../icons/pluse.svg";
-import { ReactComponent as IconMinus } from "../../icons/minus.svg";
-import faqImage from "../../images/faqImage/mobile/faqImage.png";
-import { useState } from "react";
+import { ReactComponent as IconPlus } from "../../assets/icons/plus.svg";
+import { ReactComponent as IconMinus } from "../../assets/icons/minus.svg";
+import faqImage from "../../assets/images/faqs/map.jpg";
+import { useState, useContext, useRef, useLayoutEffect } from "react";
+import { deviceWidth } from "../../vars/deviceWidth";
+import { PageFormatContext } from "../../context/pageFormatContext";
+import useResizeObserver from "@react-hook/resize-observer";
 
 const options = [
   {
@@ -52,54 +55,94 @@ const options = [
 ];
 
 const Faqs = () => {
-  let [currentTitle, SetcurrentTitle] = useState(null);
+  const target = useRef(null);
+  let [currentTitle, SetcurrentTitle] = useState(0);
+  let [size, setSize] = useState({ width: 0, height: 0 });
+  const pageFormat = useContext(PageFormatContext);
+  const isMobile = pageFormat < deviceWidth.desktopW ? true : false;
+
+  useLayoutEffect(() => {
+    target.current && setRoundedSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  const setRoundedSize = ({ width, height }) => {
+    setSize({ width: Math.round(width), height: Math.round(height) });
+  };
+
+  useResizeObserver(target, (entry) => {
+    const { inlineSize: width, blockSize: height } = entry.contentBoxSize[0];
+    setRoundedSize({ width, height });
+  });
   return (
     <>
       <LayOut
         backgroundColor="var(--main-background-color)"
-        styles="0 0 80px 0"
+        styles={isMobile ? "0 0 80px 0" : "150px 0 0 0"}
       >
-        <div className={s.container} id="FAQS">
-          <div className={s.box_title}>
-            <IconPluse className={s.icon} />
-            <h3 className={s.title}>Location & FAQS</h3>
+        <div
+          className={s.position}
+          style={{ height: isMobile ? null : size.height + 50 }}
+        >
+          <div
+            className={s.absolute}
+            style={{ margin: isMobile ? null : "0 0 0 270px" }}
+            ref={target}
+          >
+            <div className={s.container} id="FAQS">
+              <div className={s.box_title}>
+                <IconPlus className={s.icon} />
+                <h3 className={s.title}>Location & FAQS</h3>
+              </div>
+              <div className={s.flex}>
+                <div>
+                  <div
+                    className={s.text}
+                    style={{ margin: isMobile ? null : "0 0 170px 0" }}
+                  >
+                    <p>LOCATION</p>
+                    <p className={s.question}>WHERE AND WHEN IS NOT A TEST?</p>
+                    <p className={s.description}>
+                      NOT A TEST is happening at The Carl Fisher Clubhouse 2100
+                      Washington Ave Miami Beach Florida 33139, on November 30
+                      to December 2nd 2022
+                    </p>
+                  </div>
+                </div>
+                <div className={s.image}>
+                  <img src={faqImage} alt="Faqs map" />
+                </div>
+              </div>
+            </div>
+            <div className={s.container}>
+              <p
+                className={s.text}
+                style={{ margin: isMobile ? null : "0 0 50px 0" }}
+              >
+                FAQS
+              </p>
+              <ul style={{ margin: isMobile ? null : "0 410px 0 0" }}>
+                {options.map(({ title, text }, id) => {
+                  return (
+                    <li
+                      key={id}
+                      className={s.list_button}
+                      onClick={() => SetcurrentTitle(id)}
+                    >
+                      <span className={s.title_button}>
+                        <p className={s.button}>{title}</p>
+                        <span className={s.icon_button}>
+                          {currentTitle !== id ? <IconPlus /> : <IconMinus />}
+                        </span>
+                      </span>
+                      {currentTitle !== id ? null : (
+                        <p className={s.text_button}>{text}</p>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
-          <div className={s.text}>
-            <p>LOCATION</p>
-            <p className={s.question}>WHERE AND WHEN IS NOT A TEST?</p>
-            <p className={s.description}>
-              NOT A TEST is happening at The Carl Fisher Clubhouse 2100
-              Washington Ave Miami Beach Florida 33139, on November 30 to
-              December 2nd 2022
-            </p>
-          </div>
-        </div>
-        <div className={s.image}>
-          <img src={faqImage} alt="Faqs map" />
-        </div>
-        <div className={s.container}>
-          <p className={s.text}>FAQS</p>
-          <ul>
-            {options.map(({ title, text }, id) => {
-              return (
-                <li
-                  key={id}
-                  className={s.list_button}
-                  onClick={() => SetcurrentTitle(id)}
-                >
-                  <span className={s.title_button}>
-                    <p className={s.button}>{title}</p>
-                    <span className={s.icon_button}>
-                      {currentTitle !== id ? <IconPluse /> : <IconMinus />}
-                    </span>
-                  </span>
-                  {currentTitle !== id ? null : (
-                    <p className={s.text_button}>{text}</p>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
         </div>
       </LayOut>
     </>

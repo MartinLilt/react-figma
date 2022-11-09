@@ -1,12 +1,18 @@
 import s from "./about.module.css";
 import LayOut from "../layOut";
+import { useContext } from "react";
+import { deviceWidth } from "../../vars/deviceWidth";
+import { PageFormatContext } from "../../context/pageFormatContext";
 
 const About = () => {
+  const pageFormat = useContext(PageFormatContext);
+  const isMobile = pageFormat < deviceWidth.desktopW ? true : false;
+
   return (
     <LayOut
       isSection="default"
       backgroundColor="var(--accent-background-color)"
-      styles="70px 0 80px 0"
+      styles={isMobile ? "70px 0 80px 0" : "120px 0 40px 0"}
     >
       <ul className={s.list} id="ABOUTVICE">
         <li>
